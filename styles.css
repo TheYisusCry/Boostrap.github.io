@@ -1,0 +1,242 @@
+html {
+    scroll-padding-top: 105px;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+  }
+
+h2{
+    color: white;
+    font-weight: bold;
+  }
+
+h3{
+    color: white;
+    font-weight: bold;
+  }
+
+ul{
+    color: white;
+  }
+
+ol{
+    color: white;
+  }
+
+p{
+    color: white;
+}
+
+ul li{
+    margin-bottom: 10px;
+}
+
+hr{
+  color: #702df7;
+  border: 2px #702df7 solid;
+}
+
+#bioBootstap{
+    color: #702df7;
+    font-weight: bold;
+}
+
+.color-link{
+    color: blue;
+    font-weight: bold;
+}
+
+.color-link:hover{
+    color: darkblue;
+}
+.menu{
+    background-color: #702df7;
+    
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+.letra-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+
+.nav-item.dropdown .nav-link.show {
+  color: #CCFF00;
+    
+}
+
+.principal-menu{
+    font-size: 22px;
+    color: white;
+}
+
+.principal-menu:hover {
+    color: #CCFF00;
+}
+
+.principal-menu:active {
+  color: #CCFF00;
+}
+
+.nav-item.dropdown .nav-link.show {
+  color: #CCFF00;
+  
+}
+
+.resposivo-background{
+    background-color: #702df7;
+    
+}
+
+.ventajas-dieño-responsivo::before{
+    content: "✔";
+    color: #00ff7f;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+section{
+    padding: 13px;
+}
+
+.lista-alerta{
+  list-style: none;
+}
+
+.lista-alerta::before{
+  content: "✔";
+  color: #00ff7f;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.card-text{
+  color: black;
+}
+
+.color-boton-card{
+  background-color: #ff0033;
+}
+
+.color-boton-card:hover{
+  background-color: darkred;
+}
+
+.card-title{
+  color: black;
+}
+
+.card{
+  background-color: #702df7;
+  border: #702df7;
+  width: 18rem;      
+  min-height: 25rem;  
+}
+
+#enlace-alerta{
+  color: red;
+}
+
+#enlace-alerta:hover{
+  color: darkred;
+}
+
+.boton-footer{
+  color: white;
+}
+
+.boton-footer{
+  font-size: 22px;
+  color: white;
+}
+
+.nav-item.dropdown .nav-link.show {
+color: #CCFF00;
+
+}
+
+.super-item-footer{
+  font-size: 32px;
+  color: black;
+  font-weight: bold;
+}
+.item-footer{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+.footer-links{
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.instagram-icon svg{ 
+  text-decoration: none;
+  color: #d12991;
+}
+
+.instagram-icon svg:hover{ 
+  text-decoration: none;
+  color: #a52172;
+}
+
+.facebook-icon svg{ 
+  text-decoration: none;
+  color: #097fec;
+}
+
+.facebook-icon svg:hover{ 
+  text-decoration: none;
+  color: #075baa;
+}
+
+.tiktok-icon svg{ 
+  text-decoration: none;
+  color: black;
+}
+
+.tiktok-icon svg:hover{ 
+  text-decoration: none;
+  color: rgb(41, 41, 41);
+}
+
+.hr-footer{
+  color: white;
+  border: 2px white solid;
+}
+
+.copyright{
+  color: white;
+}
+
+.titulo-transformaciones{
+  color: black;
+  font-weight: bold;
+  background-color: #e16410;
+  border-radius: 20px;
+  display: inline-table;
+  padding: 5px;
+  padding-inline: 23px;
+}
+
+.contenido-transformaciones{
+  color: black;
+  font-weight: bold;
+  background-color: #e16410;  
+  border-radius: 20px;
+  display: inline-block;
+  padding: 5px;
+  padding-inline: 23px;
+}

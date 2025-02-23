@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Importando el Css de Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Importando el Css mio-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Aplicando el icono de pestaña-->
+    <link rel="icon" type="image/x-icon" href="icons/goku.ico">
+    <!--Metas-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esto es un sitio web de una sola pagina explicando algunas cosas de bootstrap con ejemplos">
+    <meta name="keywords" content="goku, bootstrap, Boostrap, super-saiyajin, kakarotto, programación web, paginas web, sitios web, css, html, JavaScript, JS, html5, desarrollo web">
+    <meta name="author" content="Ismael José Batista">
+
+    <title>Boostrap</title>
+</head>
+<body>
+    <!--Hola aqui va el menú-->
+    <nav class="navbar navbar-expand-sm fixed-top menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/Bootstrap_logo.svg.png" alt="Logo" width="65" height="56" class="d-inline-block align-text-top">
+            <span class="letra-logo">Boostrap</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active principal-menu" aria-current="page" href="#bioBootstap">
+                  <span class="principal-menu">Inicio</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle principal-menu" href="#bioBootstap" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>Contenido</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#Responsivo">Diseño Responsivo</a></li>
+                  <li><a class="dropdown-item" href="#Menu">¿Menus?</a></li>
+                  <li><a class="dropdown-item" href="#alertas">¿Como poner alertas?</a></li>
+                  <li><a class="dropdown-item" href="#carruceles">¡Descubre los carruceles!</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=O18x-yQCvy4&ab_channel=GGYNC" target="_blank">¡SORPRESA!</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link principal-menu" href="#videos-extra">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link principal-menu" href="#sobre-mi">About us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--Hola aqui va el Inicio-->
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-12">
+            <h2 id="bioBootstap"><b>¿Boostrap?</b></h2>   
+          </div>
+        </div>
+      </div>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-12">
+              <img src="https://www.pragimtech.com/wp-content/uploads/2019/04/bootstrap.jpg" class="img-fluid" alt="Boostrap">
+            </div>
+          </div>
+        </div>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-12">
+              <p><b>Bootstrap</b> es un framework de código abierto para el desarrollo de interfaces web modernas, responsivas y estilizadas. Fue creado por Twitter en 
+                2011 con el objetivo de facilitar la creación de sitios web sin la necesidad de escribir mucho código CSS desde cero.</p>
+              <p>Bootstrap combina HTML, CSS y JavaScript, proporcionando una colección de herramientas y componentes predefinidos que permiten diseñar páginas
+                 web de manera rápida, uniforme y adaptable a cualquier tipo de pantalla o dispositivo.</p>
+              <p>Gracias a su sistema de cuadrícula flexible, su compatibilidad con los navegadores modernos y su extensa documentación, Bootstrap se ha convertido
+                 en uno de los frameworks más populares en el desarrollo web.</p>
+            </div>
+          </div>
+        </div>
+
+      <!--Hola aqui va la parte de diseño responsivo-->
+    <section>
+      <div class="container mt-3 p-3 rounded resposivo-background ">
+        <div class="row">
+          <div class="col-12">
+            <h2 id="Responsivo">Diseño Responsivo</h2>
+            <p>El diseño responsivo (o diseño adaptable) es una técnica de desarrollo web que permite que un sitio o aplicación se adapte automáticamente a diferentes 
+              tamaños de pantalla y dispositivos, como computadoras de escritorio, tabletas y teléfonos móviles.</p>
+        <div class="row">
+          <div class="col-6">
+            <h3>Caracteristicas principales del diseño responsivo</h3>
+            <ul>
+              <li><b>Uso de media queries 📏:</b> Permiten aplicar estilos CSS según el tamaño de la pantalla.</li>
+              <li><b>Diseño fluido 📐:</b> Se utilizan porcentajes en lugar de valores fijos para que los elementos se ajusten dinámicamente.</li>
+              <li><b>Imágenes y elementos flexibles 🖼️:</b> Se escalan de acuerdo con el tamaño de la pantalla.</li>
+              <li><b>Menús adaptables 📱:</b> Se transforman en hamburguesa o cambian de disposición en pantallas pequeñas.</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h3>Ventajas del diseño responsivo</h3>
+            <p class="ventajas-dieño-responsivo">Mejor experiencia de usuario en cualquier dispositivo</p>
+            <p class="ventajas-dieño-responsivo">Evita tener múltiples versiones del mismo sitio.</p>
+            <p class="ventajas-dieño-responsivo">Mayor accesibilidad para todos los usuarios.</p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Hola aqui va la parte de como hacer un menú-->
+    <section>
+      <div class="container mt-3 p-3 rounded resposivo-background">
+        <div class="row">
+          <div class="col-12">
+            <H2 id="Menu">¿Cómo poner un menú con Boostrap?</H2>
+            <p>Los menús hacen que la navegación sea fácil, clara y adaptable a diferentes dispositivos. Ya sea una barra 
+              fija en la parte superior de la página o un menú desplegable para agrupar opciones, Bootstrap simplifica su implementación sin necesidad 
+              de escribir código complejo.</p>
+            <h3>Aqui estan los pasos para poder insertar un menu con Boostrap:</h3>
+            <ol>
+              <li>Incluir Bootstrap en tu proyecto (desde un CDN o archivo local).</li>
+              <a class="color-link" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Aprende a hacerlo aqui!!!</a>
+              <li>Usar la estructura de Navbar con clases predefinidas.</li>
+              <a class="color-link" href="https://getbootstrap.com/docs/5.3/components/navbar/" target="_blank">Aprende a hacerlo aqui!!!</a>
+              <li>Configurar a preferencia.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Hola aqui va la parte de como hacer alertas-->
+    <section>
+      <div class="container mt-3 p-3 rounded resposivo-background">
+        <div class="row">
+          <div class="col-12">
+            <H2 id="alertas">¿Como poner alertas?</H2>
+            <p>Las alertas en Bootstrap son elementos visuales que permiten mostrar mensajes importantes al usuario, como notificaciones, errores, advertencias o confirmaciones de éxito.
+                Se representan con la clase alert y pueden personalizarse con diferentes estilos y opciones interactivas, como botones de cierre o animaciones.</p>
+            <h3>Las alertar son útiles para: </h3>
+            <ul>
+              <li class="lista-alerta">Mostrar mensajes de éxito después de completar una acción.</li>
+              <li class="lista-alerta">Informar sobre errores o problemas en el sistema.</li>
+              <li class="lista-alerta">Advertir al usuario sobre posibles problemas o acciones peligrosas.</li>
+              <li class="lista-alerta">Mostrar mensajes informativos o recordatorios.</li>
+              <p class="placeholder-glow">
+                <span class="placeholder col-5"></span>
+                <span><br></span>
+                <span class="placeholder col-5"></span>
+                <span><br></span>
+                <span class="placeholder col-5"></span>
+              </p>
+            </ul>
+            <h3>Tipos de alertas en Bootstrap:</h3>
+            <img src="imagenes/tipo-de-alarmas.jpg" alt="tipo-de-alarmas" class="m-3 pe-4 img-fluid">
+            <ul>
+              <li><b>alert-primary</b>: Se usa para mensajes generales o destacados y es de color azul.</li>
+              <li><b>alert-secondary</b>: Para información secundaria o menos relevante, de color gris.</li>
+              <li><b>alert-success</b>: Indica éxito o confirmación de una acción, de color verde.</li>
+              <li><b>alert-danger</b>: Se usa para advertencias críticas o errores, de color rojo.</li>
+              <li><b>alert-warning</b>: Para alertas de precaución o advertencias, de color amarillo.</li>
+              <li><b>alert-info</b>: Para información adicional o relevante, de color celeste.</li>
+              <li><b>alert-light</b>: Una alerta con fondo claro, ideal para mensajes sutiles.</li>
+              <li><b>alert-dark</b>: Para alertas con fondo oscuro, útil para interfaces con modo oscuro.</li>
+            </ul>
+            <h3>Ejemplo de alerta funcional: </h3>
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Presiona para mostrar la alerta</button>
+            <script>
+              const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+              const appendAlert = (message, type) => {
+                const wrapper = document.createElement('div')
+                wrapper.innerHTML = [
+                  `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                  `   <div>${message}</div>`,
+                  '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                  '</div>'
+                ].join('')
+
+                alertPlaceholder.append(wrapper)
+              }
+
+              const alertTrigger = document.getElementById('liveAlertBtn')
+              if (alertTrigger) {
+                alertTrigger.addEventListener('click', () => {
+                  appendAlert('Este es el mensaje de la alerta', 'warning')
+                })
+              }
+            </script>
+            <p class="mt-3"><b>Para mas información sobre las alertas pulse <a id="enlace-alerta" href="https://getbootstrap.com/docs/5.3/components/alerts/" target="_blank">aquí!!</a></b> </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--Hola aqui va la parte de lo carruceles-->
+    <section>
+      <div class="container mt-3 p-3 rounded resposivo-background">
+        <div class="row">
+          <div class="col-12">
+            <H2 id="carruceles">¡Descubre los carruceles!</H2>
+            <p>Los carruseles en Bootstrap son componentes deslizables que permiten mostrar una serie de imágenes o contenido en un formato interactivo y atractivo. 
+                Son ideales para resaltar información clave, como productos, noticias o imágenes destacadas en un sitio web.</p>
+            <h3>🔹 Características principales:</h3>
+            <ul>
+              <li>Navegación automática o manual: Pueden avanzar automáticamente o con controles manuales.</li>
+              <li>Indicadores y controles: Incluyen puntos (indicators) y botones de navegación (prev/next).</li>
+              <li>Soporte para contenido variado: Se pueden incluir imágenes, texto y botones dentro de cada diapositiva.</li>
+              <li>Transiciones suaves: Se usa animación CSS para cambiar entre diapositivas.</li>
+            </ul>
+            <h3>Ejemplo de Carrucel: </h3>
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15" aria-label="Slide 16"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://www.mundodeportivo.com/alfabeta/hero/2023/04/transformaciones-goku.jpg?width=1200&aspect_ratio=16:9" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Todas las transformaciones de Goku en Dragon Ball</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/04/goku-oozaru.jpg?width=1200" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Ozaru</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: episodio 12 de Dragon Ball.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/04/kaio-ken.jpeg?width=1200" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Kaio-Ken</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: episodio 29 de Dragon Ball Z.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/04/falso.jpg?width=1200" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Super Saiyajin Falso</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: Película Dragon Ball Z: Goku es un Super Saiyajin.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/04/super-saiyajin-1.1682165373.3554.jpg?width=1200" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Super Saiyajin</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: episodio 95 de Dragon Ball Z.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/04/super-saiyajin-san-dankai.jpeg?width=1200" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Super Saiyajin de Tercer Grado</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: episodio 162 de Dragon Ball Z.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/04/super-saiyan-2.1682118036.4601.jpg?width=1200" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Super Saiyajin 2</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: episodio 184 de Dragon Ball Z (Gohan).</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/04/super-saiyajin-3.jpg?width=1200" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Super Saiyajin 3</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: episodio 245 de Dragon Ball Z.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/04/golden-ozarugolden-ozaru.png?width=1200" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Ozaru Dorado</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: episodio 33 de Dragon Ball GT.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/04/fase-4.jpg?width=1200" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Super Saiyajin 4</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: episodio 35 de Dragon Ball GT.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/04/super-saiyajin-god.jpg?width=1200" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Super Saiyajin Dios</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: película Dragon Ball Z: La Batalla de los Dioses.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/04/super-saiyajin-blue.jpg?width=1200" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Super Saiyajin Blue</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: película Dragon Ball Z: La resurrección de 'F'.</p>
+                  </div>
+                </div>
+                <div class="carousel-item goku">
+                  <img src="imagenes/super-saiyajin-blue-kaio-ken.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Super Saiyajin Blue Kaio-Ken</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: Dragon Ball Super.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/04/ultra-instinto-senal.jpeg?width=1200" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Ultra Instinto Señal</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: episodio 110 de Dragon Ball Super.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="https://cdn.alfabetajuega.com/alfabetajuega/2023/04/ultra-instinto-perfecto.jpeg?width=1200" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="titulo-transformaciones">Ultra Instinto Perfecto</h5>
+                    <span><br></span>
+                    <p class="contenido-transformaciones">Primera aparición: episodio 129 de Dragon Ball Super.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <!--Hola aqui va la parte de los videos-->
+    <section>
+      <hr>
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-12">
+            <h2 id="videos-extra" class="text-center mb-4">Videos</h2>
+          </div> 
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4 col-md-6 mt-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img src="imagenes/miniatura-1.avif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Curso de Bootstrap COMPLETO - (HTML + CSS + JS)</h5>
+                <p class="card-text">Este video es muy informativo y ayuda a darse una introducción de lo que es Boostrap.</p>
+                <a href="https://youtu.be/-ZInT4p9hH8?si=hh0uRU_bW5JF5-_k" target="_blank" class="btn color-boton-card">Ir a verlo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-6 mt-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">  
+              <img src="imagenes/miniatura-2.avif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">🟣 Curso de BOOTSTRAP desde CERO (Completo) ✅ 2025</h5>
+                <p class="card-text">Este es un video bastante que nos ayuda a entender mejor este framework y nos guía para hacer un portafolio.</p>
+                <a href="https://youtu.be/QCw0L6FupQ0?si=qzUUA8misxTCPgvY" target="_blank" class="btn color-boton-card">Ir a verlo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-12 mt-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img src="imagenes/miniatura-3.avif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Aprende Bootstrap 5 - Curso de Bootstrap desde Cero</h5>
+                <span class="placeholder col-12"></span>
+                <span class="placeholder w-75"></span>
+                <span class="placeholder" style="width: 25%;"></span>
+                <span><br></span>
+                <a href="https://youtu.be/kLBlM3yF2-A?si=Qepquegte4XhRgBV" target="_blank" class="btn color-boton-card mt-3">Ir a verlo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Hola aqui va el footer-->
+    <footer>
+      <div class="container-fluid mt-3 menu">
+        <div class="row text-center">
+            <div class="col mt-2">
+                <img id="sobre-mi" src="imagenes/Bootstrap_logo.svg.png" width="100" alt="Bootstrap_logo">
+            </div>
+        </div>
+        <div class="row text-center">
+            <h3>Bootstrap by Ismael José Batista 23-0669</h3>
+        </div>
+        <div class="row text-center">
+            <div class="col-4 mt-2">
+                <h4 class="super-item-footer">Menu</h4>
+                <p class=" mb-2 "> <a href="#bioBootstap" class="item-footer">Inicio</a></p>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle mb-2 pb-2 boton-footer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="text-center item-footer">Contenido</span>
+                  </button> 
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#Responsivo">Diseño Responsivo</a></li>
+                    <li><a class="dropdown-item" href="#Menu">¿Menus?</a></li>
+                    <li><a class="dropdown-item" href="#alertas">¿Como poner alertas?</a></li>
+                    <li><a class="dropdown-item" href="#carruceles">¡Descubre los carruceles!</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=O18x-yQCvy4&ab_channel=GGYNC" target="_blank">¡SORPRESA!</a></li>
+                  </ul>
+                </div>
+                <p><a href="#videos-extra" class="item-footer">Videos</a></p>
+            </div>
+            <div class="col-4 mt-2">
+                <h4 class="super-item-footer">Contactos</h4>
+                <p class="item-footer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                </svg> <a class="footer-links" href="tel:+18494530903" target="_blank">849-453-0903</a></p>
+                
+                <p class="item-footer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                  <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                  <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                </svg><a class="footer-links" href="mailto:ij23-0699@unphu.edu.do"> ij23-0699@unphu.edu.do</a></p>
+                
+                <p class="item-footer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                  <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                  <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                </svg><a class="footer-links" href="mailto:ismaelfw2005@gmail.com"> ismaelfw2005@gmail.com</a></p>    
+                <i class="bi bi-envelope-at-fill"></i>
+            </div>
+            <div class="col-4 mt-2">
+                <h4 class="super-item-footer">Redes</h4>
+                <p class="item-footer"><a class="instagram-icon" href="https://www.instagram.com/the_yisuscry/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg></a></p>
+                <p class="item-footer"><a class="facebook-icon" href="https://www.facebook.com/ismael.josebatista.9" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg></a></p>
+                <p class="item-footer"><a class="tiktok-icon" href="https://www.tiktok.com/@the_yisuscry?is_from_webapp=1&sender_device=pc" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                </svg></a></p>
+            </div>
+            <hr class="hr-footer">
+            <h5 class="copyright">Ismael José Batista – 23-0669 © 2005 – Hasta que Dios quiera. Todos los derechos reservados</h5>
+        </div>
+    </div>
+    </footer>
+
+    <!--Importando el JV de Boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
